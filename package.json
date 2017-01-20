@@ -1,13 +1,21 @@
 {
-  "name": "chat-example",
+  "name": "th-canvas",
   "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "TH",
   "dependencies": {
-    "async": "~0.2.8",
-    "express": "~3.2.4",
-    "socket.io": "~0.9.14"
+    "async": "0.2.8",
+    "body-parser": "1.16.0",
+    "bootstrap": "^3.3.7",
+    "bower": "1.8.0",
+    "cookie-parser": "1.4.3",
+    "express": "3.2.4",
+    "express-session": "1.14.2",
+    "font-awesome": "^4.7.0",
+    "path": "0.12.7",
+    "request": "2.79.0",
+    "socket.io": "0.9.14"
   }
 }
