@@ -8,7 +8,7 @@ app.use(server.static(__dirname + '/public'));
 app.use(server.static(__dirname + '/node_modules'));
 app.use(server.static(__dirname + '/js'));
 app.use(server.static(__dirname + '/client'));
-
+app.use(server.static(__dirname + '/img'));
 
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({

@@ -1,51 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>MyPinBoard</title>
-  
-  <script src="/js/jquery.min.js"></script>
-  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <script src="/js/angular.min.js"></script>
-  <script src="/js/client.js"></script>
-  <link rel="stylesheet" href="/css/file.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body ng-app="myApp" ng-cloak>
-  <div class="container-fluid" ng-controller="mainController">
+        <script src="/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/bootstrap.min.js"></script>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+        <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Architects Daughter" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+
+
+
+
+        <title>My Work</title>
+    </head>
+
+    <body ng-app="myApp" ng-cloak id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-          <a class="navbar-brand" href="#">My<i class="fa fa-thumb-tack fa-1x" aria-hidden="true"></i>Board</a>
+                    <a class="navbar-brand" href="#myPage">th's designs</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#portfolio">My Work</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="portfolio" class="container-fluid text-center bg-grey">
+            <h2>Portfolio</h2><br>
+
+            <div class="row text-center row-eq-height">
+                <div class="col-md-8">
+                    <div class="thumbnail grid-item">
+                        <img class="pic" src="/portfolio/quotes2.png" alt="Dynamic Search WebApp" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#1</h1><strong>Dynamic Search WebApp</strong></p>
+                        <span class="label label-info">ElasticSearch</span>
+                        <span class="label label-info">JavaScript</span>
+                        <span class="label label-info">Node</span>
+                        <span class="label label-info">HTML</span>
+                        <span class="label label-info">CSS</span>
+                        <span class="label label-info">Angular</span>
+                        <span class="label label-info">Boostrap</span>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img class="pic" src="/portfolio/simong.png" alt="Simon's Game App" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#2<a class="demo" href="http://s.codepen.io/thadia/debug/ezOgyp/yPAJjYgzogwA/">demo</a>
+
+                                <!--      <button class="btn btn-xs btn-success demo">DEMO</button> -->
+                            </h1><strong>Simon's Game App</strong></p>
+                        <span class="label label-warning">JavaScript</span>
+                        <span class="label label-warning">HTML</span>
+                        <span class="label label-warning">CSS</span>
+                        <span class="label label-warning">Angular</span>
+                        <span class="label label-warning">Boostrap</span>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img class="pic" src="/portfolio/timer.png" alt="Timer" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#3<a class="demo" href="http://s.codepen.io/thadia/debug/zqXNeM/XBAGRpVDJRJr">demo</a></h1><strong>Timer</strong></p>
+                        <span class="label label-primary">JavaScript</span>
+                        <span class="label label-primary">Node</span>
+                        <span class="label label-primary">HTML</span>
+                        <span class="label label-primary">CSS</span>
+                        <span class="label label-primary">Angular</span>
+                        <span class="label label-primary">Boostrap</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center ">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img class="pic" src="/portfolio/calc.png" alt="Calculator" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#4</h1><strong>Calculator</strong></p>
+                        <span class="label label-info">JavaScript</span>
+                        <span class="label label-info">Node</span>
+                        <span class="label label-info">HTML</span>
+                        <span class="label label-info">CSS</span>
+                        <span class="label label-info">Angular</span>
+                        <span class="label label-info">Boostrap</span>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="thumbnail">
+                        <img class="pic" src="/portfolio/pin2.png" alt="Pin Board" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#5<a class="demo" href="http://th-pin-it.herokuapp.com/">demo</a></h1><strong>Pin Board</strong></p>
+                        <span class="label label-default">JavaScript</span>
+                        <span class="label label-default">Node</span>
+                        <span class="label label-default">HTML</span>
+                        <span class="label label-default">CSS</span>
+                        <span class="label label-default">Angular</span>
+                        <span class="label label-default">Boostrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center ">
+                <div class="col-md-8">
+                    <div class="thumbnail grid-item">
+                        <img class="pic" src="/portfolio/markdown.png" alt="Text Markdown" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#6<a class="demo" href="http://s.codepen.io/thadia/debug/XpNPPY/PBkNWGQJqqpM">demo</a></h1><strong>Text Markdown</strong></p>
+                        <span class="label label-info">JavaScript</span>
+                        <span class="label label-info">Node</span>
+                        <span class="label label-info">HTML</span>
+                        <span class="label label-info">CSS</span>
+                        <span class="label label-info">Angular</span>
+                        <span class="label label-info">Boostrap</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail grid-item">
+                        <img class="pic" src="/portfolio/xoxo2.png" alt="TicTacToe Game" width="400" height="300">
+                        <p>
+                            <h1 class="htag1">#7<a class="demo" href="http://s.codepen.io/thadia/debug/bpydYz/yoMZEbgPGEnk">demo</a></h1><strong>TicTacToe Game</strong></p>
+                        <span class="label label-info">JavaScript</span>
+                        <span class="label label-info">Node</span>
+                        <span class="label label-info">HTML</span>
+                        <span class="label label-info">CSS</span>
+                        <span class="label label-info">Angular</span>
+                        <span class="label label-info">Boostrap</span>
+                    </div>
+                </div>
+
+
+            </div><br>
+
+        </div>
+        <!-- Container (About Section) -->
+        <div id="about" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>About Me</h2><br>
+                    <h4>I'm a designer/developer hybrid who loves technology.</h4><br>
+                    <p>
+                        <li>Tools: JavaScript, HTML, CSS, Photoshop, Illustrator</li>
+                        <li>Location: Seattle Metro Area</li>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="pic" src="/portfolio/snsk.jpg" alt="Space Needle" width="500" height="600">
+
+                </div>
+            </div>
         </div>
 
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
 
-    <div class="container">
 
-      <form class="form-signin">
-                <h2 class="form-signin-heading"><span class="text-in">Please</span> 
-                  <a id="signin" class="twitter-share-button">
-                    <a class="btn btn-danger" href="/auth/twitter">
-                      <i class="fa fa-sign-in fa-lg">
-                      </i> Sign in <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </a><span class="text-in">here</span> 
-                </h2>
-      </form>
-    </div>
-</body>
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container-fluid bg-grey">
+            <h2 class="text-center">Let's get in Touch</h2>
+
+            <a href="https://www.linkedin.com/pub/martha-diana-obrinteschi/18/64/81">
+
+                <img class="lnkin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Martha Diana Obrinteschi's profile on LinkedIn">
+
+            </a>
+
+
+        </div>
+
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-home"></span>
+            </a>
+        </footer>
+
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function() {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+
+                $(window).scroll(function() {
+                    $(".slideanim").each(function() {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
+
+        <script>
+            $(function() {
+                $('.box').matchHeight();
+            });
+        </script>
+    </body>
+
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/client.js"></script>
+
+    <link rel="stylesheet" href="/css/file.css">
+
+
 </html>
